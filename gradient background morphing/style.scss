@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// No se usa el rgb en todos (color1, color2, etc), sino la coma para separar la cantidad de Rojo, verde y azul
+// Esto se hace para que luego se le pueda poner distintas opacidades
+
+:root {
+    --color-bg1: rgb(116, 46, 229);
+    --color-bg2: rgb(233, 104, 254);
+    --color-bg3: rgb(255, 89, 0);
+    --color1: 18, 113, 255;
+    --color2: 221, 74, 255;
+    --color3: 100, 220, 255;
+    --color4: 200, 50, 50;
+    --color5: 180, 180, 50;
+    --color-interactive: 140, 100, 255;
+    --circle-size: 80%;
+    --blending: hard-light;
+  }
+
+.morphing_background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background:linear-gradient(40deg, var(--color-bg1), var(--color-bg2), var(--color-bg3) );
+}

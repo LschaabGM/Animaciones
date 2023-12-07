@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.animated-background{
+    background: linear-gradient(to right, #742EE5, #E968FE, #FF5900);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+section{
+    min-height: 1080px;
+}
+
+@keyframes animate-background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
